@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+
+.title
+{
+    line-height: 13px;
+    color: white;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #162833;
+}
+.calculator
+{
+    position: relative;
+    display: grid;
+}
+.calculator .value
+{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.calculator span
+{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    background: #293C40;
+    place-items: center;
+    border:1px solid rgba(121, 217, 1555, 0.1);
+}
+.calculator span:active
+{
+    background: #79D99B;
+    color: #79D99B;
+}
+.calculator span.clear
+{
+    grid-column: span 2;
+    width: 120px;
+}
+.calculator span.clear
+{
+    grid-column: span 2;
+    width: 120px;
+    background: #45BF9D;
+}
+.calculator span.plus
+{
+    grid-row: span 2;
+    height: 120px;
+}
+.calculator span.equal
+{
+    background: #45BF9D;
+}
